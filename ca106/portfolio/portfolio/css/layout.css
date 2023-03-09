@@ -1,0 +1,129 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1524007502914-1e3cd3548376?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    color: white;
+}
+
+div {
+    background-color: rgba(168, 150, 112, 0.274);
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 15px;
+    width: 66%;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+p {
+    text-align: center;
+    
+}
+
+
+
+
+.page-nav {
+    margin: 0, auto;
+    display: flex;
+    justify-content: center;
+}
+nav ul{
+
+    padding: auto;
+}
+
+.page-nav li {
+    list-style-type: none;
+    display: inline;
+    align-items: center;
+    padding: auto;
+    margin: 20px;
+
+}
+.page-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+
+#work .content {
+    margin: 0 auto;
+    padding: 10px;
+
+}
+
+#work li {
+    text-align: center;
+    list-style-type: none;
+    margin: 0 auto;
+
+}
+
+#images div {
+    background-color: rgba(255, 166, 0, 0);
+    
+}
+
+#images .content {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin: 0, auto;
+    
+    
+}
+
+
+.an-image {
+   width: 0 auto;
+   text-align: center;
+   
+   
+   
+   
+   
+}
+
+img {
+    border-radius: 8px;
+    
+    
+}
+
+
+input {
+    padding: 10px;
+}
+
+#contact-name {
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+#contact-email {
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+#contact-phone {
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+
+}
+
+#contact-message {
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+
+    
+}
+
+#submit {
+    border-radius: 12px;
+}

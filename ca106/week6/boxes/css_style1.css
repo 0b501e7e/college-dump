@@ -1,0 +1,28 @@
+.example-element {
+    background-color: deepskyblue;
+    width: 600px;
+    height: 400px;
+    border: 15px solid blue;
+    padding: 16px;
+    margin: 25px;
+
+}
+
+.nav-container {
+    background-color: rgb(128, 226, 216);
+    width: 600px;
+    height: 100px;
+    border: 10px lightblue;
+    padding: 16px;
+    margin: 25px;
+}
+
+.example-element2 {
+    background-color: rgb(200, 215, 219);
+    width: 600px;
+    height: 400px;
+    border: 8px dotted blue;
+    padding: 16px;
+    margin: 50px auto 50px auto;
+
+}

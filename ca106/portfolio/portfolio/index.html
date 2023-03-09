@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="My Portfolio Website" />
+    <!-- meta tag below is used for Internet Explorer and mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--This means that the browser will (probably) render the width of the page at the width of its own screen. //-->
+    <title>Senan's Portfolio Site</title>
+    <!-- add your stylesheet and any other styling code, e.g. google fonts  a good link is https://fonts.google.com/-->
+	
+	<link rel="stylesheet" href="css/layout.css" /> 
+</head>
+
+<!-- all the classes below will require some CSS styles to be included in your layout.css file, if you do not
+include a style for these classes you should remove the class from your html file //-->
+<body>
+    <main class= "main-style";>
+	 <header>  <!-- A header tag defines the heading section of your website. It represents a container used for headings, or introductory content.-->
+            <div>  <!-- A div stands for division tag, it basically is a container used to separate elements.-->
+                <h1>Senan Warnock</h1>
+                <p>CA Student ready to take over</p>
+            </div>
+        </header>
+        <br>
+	    <!-- You could style Main here if you wish-->
+        <nav class="page-nav"> <!-- the navigation part of the page.  Note links just jump to different parts of the page.-->
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#work">Work Experience</a></li>
+                <li><a href="#images">Image Gallery</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+       <br>
+    <!--Note here the use of an ID.  the link above actually links to this.  It's a good example of where an ID can be used.  Note also that the section has a class attribute.  use this for styling. -->
+        <section id="about">  <!--ID tags can be used to bookmark a section with the corresponding ID. It allows you to click and jump to that section. ID tags can be used once, where classes can be used many times. -->
+            <div>
+                <h2>About Me</h2>
+                <div>
+                    <p>Welcome to my website, my name is Senan Warnock. I am a Computer Science student at Dublin City University. I am 25 years old, Dublin born and bred. I love technology, cooking and music, and you 
+                    can generally find me tinkering around with an instrument, playing with some tech, or cooking the nicest curry you will ever have.</p>
+                </div>
+            </div>
+        </section>
+        <br>
+
+        <section id="work">
+            <div>
+                <h2>Work Experience</h2>
+                <div class="content">
+                    <h3>Chef @ Hard Rock Cafe</h3>
+                      <ul>
+                          <li> Line Cook</li>
+                          <li>Food Preparation</li>
+                          <li>Maintaining Cleanliness</li>
+                      </ul>
+                    <h3>Chef de Partie @ Angelina's Restaurant</h3>
+                      <ul>
+                          <li> Line Cook</li>
+                          <li>Food Preparation</li>
+                          <li>Maintaining Cleanliness</li>
+                      </ul>
+                    <h3>Chef @ Winding Stair</h3>
+                      <ul>
+                          <li> Line Cook</li>
+                          <li>Food Preparation</li>
+                          <li>Maintaining Cleanliness</li>
+                      </ul>
+                </div>
+            </div>
+        </section>
+				<br><br>
+
+        <section id="images">
+            <div>
+                <h2>Image Gallery</h2>
+                <div class="content">
+                    <div class="an-image">
+                        <img src = "images\music-pic.jpg" alt = "Stage for a band" style="width: 300px; height: 300px;" >
+                        <div>
+                            <p>
+                                This image is good representation of what I love and miss dearly with the COVID-19 restrictions: Gigs.
+                                Being a keen musician I miss live music terribly.
+
+                            </p>
+                         </div>
+                    </div>
+                    
+                    <div class="an-image">
+                        <img src = "images\tech.jpg" alt = "Computer screen with code" style="width: 300px; height: 300px;" >
+                        <div> <p>
+                            Of course being a computer science student, I have a keen interest in programming and love developing my skils at college even further.
+
+                        </p> 
+                    </div>
+                    </div>
+                    
+                    <div class="an-image">
+                        <img src = "images\cooking.jpg" alt ="Pot on a portable stove" style="width: 300px; height: 300px;">
+                        <div><p> 
+                            I love to cook food, I spent a lot of time working as a chef while i lived abroad and at home.
+
+                        </p> 
+                    </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <section id="contact">
+            <div class=>
+                <h2>Contact Me</h2>
+                <div>
+                    <form action="https://formspree.io/[your email address goes here]" method="post">
+	                    <!-- Style this nicely.  Don't worry if the form doesn't work, marks here for how well you style it. -->
+                        <p>
+                            <label for="contact-name">Your Name</label>
+                            <input id="contact-name" type="text" name="contact-name"  placeholder="Your Name"/>
+                        </p>
+                        <p>
+                            <label for="contact-email">Your email address</label>
+                            <input id="contact-email" type="email" name="contact-email" placeholder="youremail@email.com" /> </p>
+                        <p>
+                            <label for="contact-phone">Your phone number</label>
+                            <input id="contact-phone" type="tel" name="contact-phone" placeholder="08XXXXXXXX" /> </p>
+                        <p>
+                            <label for="contact-message">Your message</label>
+                            <textarea id="contact-message" name="contact-message" rows="5"> </textarea>
+                        </p>
+                        <p>
+                            <input id= "submit" type="submit" value="send my message" /> </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer id = "footer-layout">
+                <p> &copy; <a href="dcu.ie/">DCU 2019-2020</a>
+				<span class="footer-separator">&middot;</span>
+				<span class="footer-text">Senan Warnock</span> <span class="footer-separator">&middot;</span> <span class="footer-text">This is student coursework</span> <span class="footer-separator">&middot;</span> <span class="footer-text">Lecturer<a href="http://www.computing.dcu.ie/~jkernan">Jane Kernan</a></span> <span class="footer-separator">&middot;</span> <span class="footer-text">
+     <a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a><br/>
+	 
+        </span> </p>
+        <!-- Note that the link to the validator above will only produce results when your page is uploaded to the server, and you click on the link from the browser.-->
+         
+        </footer>
+    </main>
+</body>
+
+</html>
