@@ -1,0 +1,24 @@
+ex4-duplicate-remover.c
+
+For this task, I struggled.
+
+I originally planned to try to solve it using nested loops through the linked list, but I thought a
+faster, more efficient way to approach it would be to sort with merge sort and then delete adjacent nodes, given
+the time complexity of merge sort is something like O(nlogn).
+
+I nearly had it working, but I realised I wasn't deleting nodes in the program. So I began a different route,
+of looping through the nodes and keeping count, and if the node count is over 1, using a function to delete that node.
+
+This worked well, I didn't need to sort the list at all this way. Unfortunately, the program has memory allocation errors
+when the first two integers are the same. I came up with a way to fix it, albeit, it was a not a long term solution to the
+issue. I swapped the first and third integers if the first two were the same. I still did not pass all the tests.
+
+I wouldn't have discovered this problem though, had I not automated my tests. Every run of the program had a new set of random numbers
+and because of this I was able to spot this error.
+
+Throughout the program, I tested my inputs with the printf function to make sure I was getting the right input into my list.
+I removed my sort algorithm to simplify the program as it turned out to be unneeded in my 2nd implementation.
+
+If I could have more time to revist this program, I might have tried to implement a hash set or a different data structure
+besides a linked list. A hash set would have been a more efficient approach but unfortunately I don't know how to implement it 
+in C at the moment. With a hash set the algorithmic complexity would be O(n) linear time or O(1) best case as far as I know.
